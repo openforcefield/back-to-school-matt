@@ -113,6 +113,31 @@ TARGET_STATES = [
 ]
 
 
+def filter_only_nitrogen_or_water(
+    input_data_frame: pd.DataFrame,
+) -> pd.DataFrame:
+    """
+    Filter a physical property data frame to include only physical properties in which both
+    components are either water or a compound that contains nitrogen.
+    """
+    def _is_water_or_has_nitrogen(smiles: str) -> bool:
+        """Return whether or not this smiles string is water or containins a nitrogen."""
+        smiles = smiles.lower()
+
+        return "n" in smiles or smiles == "o"
+
+    indicies_to_keep = list()
+
+    for index, row in input_data_frame.iterrows():
+        if _is_water_or_has_nitrogen(row['Component 1']) and _is_water_or_has_nitrogen(row['Component 2']):
+            indicies_to_keep.append(index)
+
+    logger.info(f"Property count before filtering for water/nitrogen: {len(input_data_frame)}")
+
+    logger.info(f"Property count after filtering for water/nitrogen: {len(indicies_to_keep)}")
+
+    return input_data_frame[input_data_frame.index.isin(indicies_to_keep)]
+
 def curate_data_set(
     input_data_frame,
     smiles_to_exclude,
@@ -134,9 +159,9 @@ def curate_data_set(
         minimum_representation=4, per_component=True
     )
     # filter out substances (i.e. full mixtures)
-    # with less than 3 representations across entire dataset
+    # with less than 4 representations across entire dataset
     select_num_substance = selection.SelectNumRepresentationSchema(
-        minimum_representation=3, per_component=False
+        minimum_representation=4, per_component=False
     )
 
     component_schemas=[
@@ -162,7 +187,7 @@ def curate_data_set(
         # select diverse mixtures
         selection.SelectSubstancesSchema(
             target_environments=CHEMICAL_ENVIRONMENTS,
-            n_per_environment=5,
+            n_per_environment=1,
             per_property=False,
         ),
         # select_num,
@@ -268,10 +293,12 @@ def main(
     )
     logger.info(f"Filtered to {len(training_set_frame)} data points")
 
+    training_set_frame = filter_only_nitrogen_or_water(training_set_frame)
+
     assert len(training_set_frame) > 0, "No data points left after filtering"
     # make sure we wind up with a reasonable number of data points
-    assert len(training_set_frame) > 1000, "Not enough data points left after filtering"
-    assert len(training_set_frame) < 2000, "Too many data points left after filtering"
+    assert len(training_set_frame) > 100, "Not enough data points left after filtering"
+    assert len(training_set_frame) < 200, "Too many data points left after filtering"
 
     ds = PhysicalPropertyDataSet.from_pandas(training_set_frame)
 

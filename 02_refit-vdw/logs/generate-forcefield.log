@@ -13,55 +13,56 @@ Warning on use of the timeseries module: If the inherent timescales of the syste
 
 /Users/mattthompson/.local/share/mamba/envs/n-vdw-split/lib/python3.12/site-packages/foyer/forcefield.py:33: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
   from pkg_resources import iter_entry_points, resource_filename
-  0%|          | 0/120 [00:00<?, ?it/s]  4%|▍         | 5/120 [00:00<00:02, 48.97it/s]  9%|▉         | 11/120 [00:00<00:02, 54.02it/s] 15%|█▌        | 18/120 [00:00<00:01, 57.12it/s] 20%|██        | 24/120 [00:00<00:01, 52.84it/s] 26%|██▌       | 31/120 [00:00<00:01, 55.29it/s] 31%|███       | 37/120 [00:00<00:01, 55.18it/s] 36%|███▌      | 43/120 [00:00<00:01, 47.74it/s] 42%|████▏     | 50/120 [00:00<00:01, 51.49it/s] 47%|████▋     | 56/120 [00:01<00:01, 52.91it/s] 52%|█████▏    | 62/120 [00:01<00:01, 54.07it/s] 57%|█████▋    | 68/120 [00:01<00:00, 54.47it/s] 62%|██████▏   | 74/120 [00:01<00:00, 55.91it/s] 67%|██████▋   | 80/120 [00:01<00:00, 55.29it/s] 72%|███████▏  | 86/120 [00:01<00:00, 54.28it/s] 77%|███████▋  | 92/120 [00:01<00:00, 54.19it/s] 82%|████████▏ | 98/120 [00:01<00:00, 55.30it/s] 87%|████████▋ | 104/120 [00:01<00:00, 54.78it/s] 92%|█████████▏| 110/120 [00:02<00:00, 54.43it/s] 97%|█████████▋| 116/120 [00:02<00:00, 54.80it/s]100%|██████████| 120/120 [00:02<00:00, 54.38it/s]
-2025-08-28 13:57:26,814 - __main__ - INFO - Parameter n1 [#1:1] has 0 properties associated with it.
-2025-08-28 13:57:26,814 - __main__ - INFO - Parameter n2 [#1:1]-[#6X4] has 66 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Training n2 [#1:1]-[#6X4]
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n3 [#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35] has 90 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Training n3 [#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35]
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n4 [#1:1]-[#6X4](-[#7,#8,#9,#16,#17,#35])-[#7,#8,#9,#16,#17,#35] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n5 [#1:1]-[#6X4](-[#7,#8,#9,#16,#17,#35])(-[#7,#8,#9,#16,#17,#35])-[#7,#8,#9,#16,#17,#35] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n6 [#1:1]-[#6X4]~[*+1,*+2] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n7 [#1:1]-[#6X3] has 48 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Training n7 [#1:1]-[#6X3]
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n8 [#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35] has 48 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Training n8 [#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35]
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n9 [#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35] has 24 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Training n9 [#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35]
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n10 [#1:1]-[#6X2] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n11 [#1:1]-[#7] has 90 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Training n11 [#1:1]-[#7]
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n12 [#1:1]-[#8] has 42 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Training n12 [#1:1]-[#8]
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n13 [#1:1]-[#16] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n14 [#6:1] has 78 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Training n14 [#6:1]
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n15 [#6X2:1] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n16 [#6X4:1] has 114 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Training n16 [#6X4:1]
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n17 [#8:1] has 30 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Training n17 [#8:1]
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n18 [#8X2H0+0:1] has 12 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Training n18 [#8X2H0+0:1]
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n19 [#8X2H1+0:1] has 42 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Training n19 [#8X2H1+0:1]
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n20 [#7:1] has 120 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Training n20 [#7:1]
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n20_split1 [#7!H2X31:1] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n21 [#16:1] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n22 [#15:1] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n23 [#9:1] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n24 [#17:1] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n25 [#35:1] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n26 [#53:1] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n27 [#3+1:1] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n28 [#11+1:1] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n29 [#19+1:1] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n30 [#37+1:1] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n31 [#55+1:1] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n32 [#9X0-1:1] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n33 [#17X0-1:1] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n34 [#35X0-1:1] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n35 [#53X0-1:1] has 0 properties associated with it.
-2025-08-28 13:57:26,815 - __main__ - INFO - Parameter n36 [#54:1] has 0 properties associated with it.
-2025-08-28 13:57:26,832 - __main__ - INFO - Saved force field to forcefield/force-field.offxml
+  0%|          | 0/120 [00:00<?, ?it/s]  4%|▍         | 5/120 [00:00<00:02, 49.67it/s]  9%|▉         | 11/120 [00:00<00:02, 52.48it/s] 15%|█▌        | 18/120 [00:00<00:01, 56.11it/s] 20%|██        | 24/120 [00:00<00:01, 52.17it/s] 26%|██▌       | 31/120 [00:00<00:01, 54.79it/s] 31%|███       | 37/120 [00:00<00:01, 52.45it/s] 36%|███▌      | 43/120 [00:00<00:01, 45.20it/s] 41%|████      | 49/120 [00:00<00:01, 48.88it/s] 47%|████▋     | 56/120 [00:01<00:01, 52.70it/s] 52%|█████▎    | 63/120 [00:01<00:01, 54.61it/s] 57%|█████▊    | 69/120 [00:01<00:00, 55.44it/s] 62%|██████▎   | 75/120 [00:01<00:00, 56.68it/s] 68%|██████▊   | 81/120 [00:01<00:00, 55.94it/s] 72%|███████▎  | 87/120 [00:01<00:00, 54.27it/s] 78%|███████▊  | 93/120 [00:01<00:00, 54.31it/s] 82%|████████▎ | 99/120 [00:01<00:00, 54.32it/s] 88%|████████▊ | 105/120 [00:01<00:00, 53.78it/s] 92%|█████████▎| 111/120 [00:02<00:00, 53.26it/s] 98%|█████████▊| 117/120 [00:02<00:00, 54.39it/s]100%|██████████| 120/120 [00:02<00:00, 53.66it/s]
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n1 [#1:1] has 0 properties associated with it.
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n2 [#1:1]-[#6X4] has 66 properties associated with it.
+2025-08-28 15:36:12,421 - __main__ - INFO - Training n2 [#1:1]-[#6X4]
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n3 [#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35] has 90 properties associated with it.
+2025-08-28 15:36:12,421 - __main__ - INFO - Training n3 [#1:1]-[#6X4]-[#7,#8,#9,#16,#17,#35]
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n4 [#1:1]-[#6X4](-[#7,#8,#9,#16,#17,#35])-[#7,#8,#9,#16,#17,#35] has 0 properties associated with it.
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n5 [#1:1]-[#6X4](-[#7,#8,#9,#16,#17,#35])(-[#7,#8,#9,#16,#17,#35])-[#7,#8,#9,#16,#17,#35] has 0 properties associated with it.
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n6 [#1:1]-[#6X4]~[*+1,*+2] has 0 properties associated with it.
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n7 [#1:1]-[#6X3] has 48 properties associated with it.
+2025-08-28 15:36:12,421 - __main__ - INFO - Training n7 [#1:1]-[#6X3]
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n8 [#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35] has 48 properties associated with it.
+2025-08-28 15:36:12,421 - __main__ - INFO - Training n8 [#1:1]-[#6X3]~[#7,#8,#9,#16,#17,#35]
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n9 [#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35] has 24 properties associated with it.
+2025-08-28 15:36:12,421 - __main__ - INFO - Training n9 [#1:1]-[#6X3](~[#7,#8,#9,#16,#17,#35])~[#7,#8,#9,#16,#17,#35]
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n10 [#1:1]-[#6X2] has 0 properties associated with it.
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n11 [#1:1]-[#7] has 90 properties associated with it.
+2025-08-28 15:36:12,421 - __main__ - INFO - Training n11 [#1:1]-[#7]
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n12 [#1:1]-[#8] has 42 properties associated with it.
+2025-08-28 15:36:12,421 - __main__ - INFO - Training n12 [#1:1]-[#8]
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n13 [#1:1]-[#16] has 0 properties associated with it.
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n14 [#6:1] has 78 properties associated with it.
+2025-08-28 15:36:12,421 - __main__ - INFO - Training n14 [#6:1]
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n15 [#6X2:1] has 0 properties associated with it.
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n16 [#6X4:1] has 114 properties associated with it.
+2025-08-28 15:36:12,421 - __main__ - INFO - Training n16 [#6X4:1]
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n17 [#8:1] has 30 properties associated with it.
+2025-08-28 15:36:12,421 - __main__ - INFO - Training n17 [#8:1]
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n18 [#8X2H0+0:1] has 12 properties associated with it.
+2025-08-28 15:36:12,421 - __main__ - INFO - Training n18 [#8X2H0+0:1]
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n19 [#8X2H1+0:1] has 42 properties associated with it.
+2025-08-28 15:36:12,421 - __main__ - INFO - Training n19 [#8X2H1+0:1]
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n20 [#7:1] has 78 properties associated with it.
+2025-08-28 15:36:12,421 - __main__ - INFO - Training n20 [#7:1]
+2025-08-28 15:36:12,421 - __main__ - INFO - Parameter n20_split1 [#7!H2X3:1] has 84 properties associated with it.
+2025-08-28 15:36:12,422 - __main__ - INFO - Training n20_split1 [#7!H2X3:1]
+2025-08-28 15:36:12,422 - __main__ - INFO - Parameter n21 [#16:1] has 0 properties associated with it.
+2025-08-28 15:36:12,422 - __main__ - INFO - Parameter n22 [#15:1] has 0 properties associated with it.
+2025-08-28 15:36:12,422 - __main__ - INFO - Parameter n23 [#9:1] has 0 properties associated with it.
+2025-08-28 15:36:12,422 - __main__ - INFO - Parameter n24 [#17:1] has 0 properties associated with it.
+2025-08-28 15:36:12,422 - __main__ - INFO - Parameter n25 [#35:1] has 0 properties associated with it.
+2025-08-28 15:36:12,422 - __main__ - INFO - Parameter n26 [#53:1] has 0 properties associated with it.
+2025-08-28 15:36:12,422 - __main__ - INFO - Parameter n27 [#3+1:1] has 0 properties associated with it.
+2025-08-28 15:36:12,422 - __main__ - INFO - Parameter n28 [#11+1:1] has 0 properties associated with it.
+2025-08-28 15:36:12,422 - __main__ - INFO - Parameter n29 [#19+1:1] has 0 properties associated with it.
+2025-08-28 15:36:12,422 - __main__ - INFO - Parameter n30 [#37+1:1] has 0 properties associated with it.
+2025-08-28 15:36:12,422 - __main__ - INFO - Parameter n31 [#55+1:1] has 0 properties associated with it.
+2025-08-28 15:36:12,422 - __main__ - INFO - Parameter n32 [#9X0-1:1] has 0 properties associated with it.
+2025-08-28 15:36:12,422 - __main__ - INFO - Parameter n33 [#17X0-1:1] has 0 properties associated with it.
+2025-08-28 15:36:12,422 - __main__ - INFO - Parameter n34 [#35X0-1:1] has 0 properties associated with it.
+2025-08-28 15:36:12,422 - __main__ - INFO - Parameter n35 [#53X0-1:1] has 0 properties associated with it.
+2025-08-28 15:36:12,422 - __main__ - INFO - Parameter n36 [#54:1] has 0 properties associated with it.
+2025-08-28 15:36:12,440 - __main__ - INFO - Saved force field to forcefield/force-field.offxml

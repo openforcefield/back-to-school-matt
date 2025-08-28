@@ -54,7 +54,7 @@ def main(
     # add a new vdW parameter, nitrogen not in a primary amine
     vdw_handler.add_parameter(
         parameter_kwargs={
-            "smirks": "[#7!H2X31:1]",
+            "smirks": "[#7!H2X3:1]",
             "epsilon": Quantity("0.1676915150424 kilocalorie / mole"),
             "rmin_half": Quantity("1.799798315098 angstrom"),
             "id": "n20_split1"

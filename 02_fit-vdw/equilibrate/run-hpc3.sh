@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-#SBATCH -J eq-ash-sage-rc2
-#SBATCH -p standard
-#SBATCH --account dmobley_lab
+#SBATCH -J back-to-school-matt-equilibrate
+#SBATCH -p gpu
+#SBATCH --account DMOBLEY_LAB_GPU
 #SBATCH -t 7-00:00:00
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=1
@@ -12,18 +12,15 @@
 . ~/.bashrc
 
 # Use the right conda environment
-conda activate n-vdw-split
+micromamba activate n-vdw-split
 
 DATA_DIRECTORY="../../01_download-data/physprop/final/output/"
 
-python equilibrate.py                                             \
-    --port                      8112                                    \
+python equilibrate.py                                             	\
+    --port                      8117                                    \
     --n-molecules               1000                                    \
     --extra-script-option       "--gres=gpu:1"                          \
-    --queue                     "free-gpu"                              \
-    --n-gpu                     23                                      \
+    --queue                     "gpu"                              	\
+    --n-gpu                     16                                      \
     --conda-env                 n-vdw-split				\
     --dataset                   "${DATA_DIRECTORY}/training-set.json"
-
-
-    

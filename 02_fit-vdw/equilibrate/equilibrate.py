@@ -104,8 +104,8 @@ def main(
         queue_name=queue,
         setup_script_commands=[
             "source ~/.bashrc",
-            f"conda activate {conda_env}",
-            "conda env export > conda-env.yaml",
+            f"micromamba activate {conda_env}",
+            "micromamba env export > conda-env.yaml",
         ],
         extra_script_options=extra_script_options,
         adaptive_interval="1000ms",

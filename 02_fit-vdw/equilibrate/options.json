@@ -36,8 +36,8 @@
             "relative_tolerance": 0.05
           }
         ],
-        "max_iterations": 1000,
-        "number_of_molecules": 3,
+        "max_iterations": 10,
+        "number_of_molecules": 1000,
         "storage_queries": {
           "full_system_data": {
             "@type": "openff.evaluator.storage.query.EquilibrationDataQuery",
@@ -67,7 +67,7 @@
               "force_field_id": {
                 "@type": "openff.evaluator.attributes.attributes.PlaceholderValue"
               },
-              "max_number_of_molecules": 3,
+              "max_number_of_molecules": 1000,
               "number_of_molecules": {
                 "@type": "openff.evaluator.workflow.utils.ProtocolPath",
                 "full_path": "build_coordinates.output_number_of_molecules"
@@ -120,7 +120,7 @@
                   "unit": "gram / milliliter",
                   "value": 0.95
                 },
-                ".max_molecules": 3,
+                ".max_molecules": 1000,
                 ".retain_packmol_files": false,
                 ".should_execute": {
                   "@type": "openff.evaluator.workflow.utils.ProtocolPath",
@@ -250,7 +250,7 @@
                   }
                 ],
                 ".error_on_failure": false,
-                ".max_iterations": 1000,
+                ".max_iterations": 10,
                 ".should_execute": true
               },
               "protocol_schemas": {
@@ -456,8 +456,8 @@
             "relative_tolerance": 0.05
           }
         ],
-        "max_iterations": 1000,
-        "number_of_molecules": 3,
+        "max_iterations": 10,
+        "number_of_molecules": 1000,
         "storage_queries": {
           "component_data": {
             "@type": "openff.evaluator.storage.query.EquilibrationDataQuery",
@@ -505,7 +505,7 @@
               "force_field_id": {
                 "@type": "openff.evaluator.attributes.attributes.PlaceholderValue"
               },
-              "max_number_of_molecules": 3,
+              "max_number_of_molecules": 1000,
               "number_of_molecules": {
                 "@type": "openff.evaluator.workflow.utils.ProtocolPath",
                 "full_path": "build_coordinates_component_$(component_replicator).output_number_of_molecules"
@@ -537,7 +537,7 @@
               "force_field_id": {
                 "@type": "openff.evaluator.attributes.attributes.PlaceholderValue"
               },
-              "max_number_of_molecules": 3,
+              "max_number_of_molecules": 1000,
               "number_of_molecules": {
                 "@type": "openff.evaluator.workflow.utils.ProtocolPath",
                 "full_path": "build_coordinates_mixture.output_number_of_molecules"
@@ -600,7 +600,7 @@
                   "unit": "gram / milliliter",
                   "value": 0.95
                 },
-                ".max_molecules": 3,
+                ".max_molecules": 1000,
                 ".retain_packmol_files": false,
                 ".should_execute": {
                   "@type": "openff.evaluator.workflow.utils.ProtocolPath",
@@ -730,7 +730,7 @@
                   }
                 ],
                 ".error_on_failure": false,
-                ".max_iterations": 1000,
+                ".max_iterations": 10,
                 ".should_execute": true
               },
               "protocol_schemas": {
@@ -933,7 +933,7 @@
                   "unit": "gram / milliliter",
                   "value": 0.95
                 },
-                ".max_molecules": 3,
+                ".max_molecules": 1000,
                 ".retain_packmol_files": false,
                 ".should_execute": {
                   "@type": "openff.evaluator.workflow.utils.ProtocolPath",
@@ -1063,7 +1063,7 @@
                   }
                 ],
                 ".error_on_failure": false,
-                ".max_iterations": 1000,
+                ".max_iterations": 10,
                 ".should_execute": true
               },
               "protocol_schemas": {

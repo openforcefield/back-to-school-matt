@@ -45,14 +45,14 @@ def main(
         n_molecules=n_molecules,
         error_tolerances=[potential_energy, density],
         # every iteration is 200 ps
-        max_iterations=1000, # go up to 200 ns
+        max_iterations=10, # go up to 200 ns
         error_on_failure=False,
     )
 
     dhmix_schema = EnthalpyOfMixing.default_equilibration_schema(
         n_molecules=n_molecules,
         error_tolerances=[potential_energy, density],
-        max_iterations=1000,
+        max_iterations=10,
         error_on_failure=False,
     )
 

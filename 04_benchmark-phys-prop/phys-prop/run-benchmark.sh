@@ -2,7 +2,7 @@
 #SBATCH -J back-to-school-matt-benchmark
 #SBATCH -p gpu
 #SBATCH --account DMOBLEY_LAB_GPU
-#SBATCH -t 7-00:00:00
+#SBATCH -t 24:00:00
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=1
 #SBATCH --cpus-per-task=1
@@ -16,7 +16,7 @@ micromamba activate n-vdw-split
 
 FFNAME="split-n-vdw-v1.offxml"
 
-FORCEFIELD="../forcefields/${FFNAME}.offxml"
+FORCEFIELD="../forcefields/${FFNAME}"
 
 DATASET="../../01_download-data/physprop/final/output/training-set.json"
 
@@ -24,10 +24,10 @@ echo "Benchmarking ${TIER} with ${FFNAME}"
 
 python benchmark.py             \
     -i  $DATASET                \
-    -p  $SLURM_ARRAY_TASK_ID    \
+    -p  0                       \
     -ff $FORCEFIELD             \
     -o  training                \
     -r  1                       \
-    -s  stored_data             \
+    -s  '../../02_fit-vdw/refit/stored_data'    \
     -bp 8500                    \
     -of request-options.json

@@ -1,6 +1,6 @@
 # Benchmarking split N vdW parameters
 
-`forcefields/n-split-vdw-v1.offxml`: Unmodified from https://github.com/openforcefield/back-to-school-matt/blob/6bec336d5b4be7a6aaae1a27de954c82998bd1fd/02_fit-vdw/refit/result/optimize/force-field.offxml
+`forcefields/n-split-vdw-v1.offxml`: Taken from https://github.com/openforcefield/back-to-school-matt/blob/6bec336d5b4be7a6aaae1a27de954c82998bd1fd/02_fit-vdw/refit/result/optimize/force-field.offxml, `remove_cosmetic_attributes.py` run on it
 
 `benchmark.py`: Modified from https://github.com/lilyminium/ash-sage-rc2/blob/931fde1370422a9b6b96557e1375af9514ff7b36/04_benchmark/phys-prop/benchmark.py
 

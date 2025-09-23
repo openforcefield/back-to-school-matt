@@ -11,6 +11,9 @@
 
 . ~/.bashrc
 
+# hope to avoid errors?
+export CUDA_VISIBLE_DEVICES=0
+
 # Use the right conda environment
 micromamba activate n-vdw-split
 

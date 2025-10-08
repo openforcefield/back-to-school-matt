@@ -11,6 +11,12 @@
 
 . ~/.bashrc
 
+TIER="validation"
+
+# make sure output/validation/ exists
+mkdir -p output/
+mkdir -p output/$TIER
+
 # hope to avoid errors?
 export CUDA_VISIBLE_DEVICES=0
 
@@ -21,16 +27,16 @@ FFNAME="split-n-vdw-v1.offxml"
 
 FORCEFIELD="../forcefields/${FFNAME}"
 
-DATASET="../../01_download-data/physprop/final/output/training-set.json"
+DATASET="../../01_download-data/physprop/final/output/${TIER}-set.json"
 
 echo "Benchmarking ${TIER} with ${FFNAME}"
 
-python benchmark.py             \
-    -i  $DATASET                \
-    -p  0                       \
-    -ff $FORCEFIELD             \
-    -o  training                \
-    -r  1                       \
+python benchmark.py             		\
+    -i  $DATASET                		\
+    -p  0                       		\  # edit this to be 1, rerun, then 2, rerun?
+    -ff $FORCEFIELD             		\
+    -o  $TIER					\
+    -r  1                       		\
     -s  '../../02_fit-vdw/refit/stored_data'    \
-    -bp 8500                    \
+    -bp 8500                    		\
     -of request-options.json

@@ -121,7 +121,7 @@ def main(
         root_directory=str(storage_directory.resolve()),
         cache_objects_in_memory=True,
     )
-    logger.info(f"Loaded {len(storage_directory._cached_retrieved_objects)} into memory")
+    logger.info(f"Loaded {len(storage_directory._cached_retrieved_objects)} cached-retrieved objects into memory")
     
     output_directory = output_directory / f"rep-{replicate}" / ff_name
     output_directory.mkdir(parents=True, exist_ok=True)
